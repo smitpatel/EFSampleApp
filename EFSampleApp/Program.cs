@@ -50,7 +50,7 @@ namespace EFSampleApp
         {
             // Select 1 provider
             optionsBuilder
-                .UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=_ModelApp;Trusted_Connection=True;Connect Timeout=5;ConnectRetryCount=0")
+                .UseSqlServer(@"Server=localhost;Database=_ModelApp;user=sa;password=<YourStrong!Passw0rd>;Connect Timeout=5;ConnectRetryCount=0")
                 //.UseSqlite("filename=_modelApp.db")
                 //.UseInMemoryDatabase(databaseName: "_modelApp")
                 //.UseCosmos("https://localhost:8081", @"C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==", "_ModelApp")
